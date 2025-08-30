@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title> SMTT - Billing </title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.js"></script>
+</head>
+<body>
+<div class="ui container" style="width:53%;">
+<img src="/storage/emulated/0/SMTT-Billing/Header.jpg" alt="1" style="width:100%;">
+
+<form class="ui form">
+<div class="ui inverted segment">
+  <p>Customer Details</p>
+</div>
+  <div class="field">
+    <div class="two fields">
+      <div class="field">
+    <label>Bill No</label>
+        <input name="bill_no" placeholder="Bill number" type="text">
+      </div>
+      <div class="field">
+    <label>Date</label>
+        <input name="date" type="date">
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <div class="two fields">
+      <div class="field">
+    <label>Customer Name</label>
+        <input name="c_name" placeholder="Customer Name" type="text">
+      </div>
+      <div class="field">
+    <label>Company Name</label>
+        <input name="co_name" placeholder="Company Name" type="text">
+      </div>
+    </div>
+  </div>
+	<div class="ui inverted segment">
+		<p>Driver & Cab Details</p>
+	</div>
+  <div class="field">
+    <div class="two fields">
+      <div class="field">
+    <label for="d_name">Driver Name</label>
+        <!--<input name="d_name" placeholder="Driver Name" type="text">-->
+		<select name="d_name" id="d_name">
+			<option value="Jithu">Jithu</option>
+		</select>
+      </div>
+      <div class="field">
+    <label for="cab_no">Cab no</label>
+        <!--<input name="cab_no" placeholder="Cab no" type="text">-->
+		<select name="cab_no" id="cab_no">
+			<option value="KA 53 AB 7468">KA 53 AB 7468</option>
+			<option value="KA 51 AJ 0244">KA 51 AJ 0244</option>
+			<option value="KA 04 D 2484">KA 04 D 2484</option>
+		</select>
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <div class="two fields">
+      <div class="field">
+    <label>Cab Type</label>
+        <!--<input name="c_type" placeholder="Cab Type" type="text">-->
+		<select name="c_type" id="c_type">
+			<option value="SEDAN (Verito)">SEDAN (Verito)</option>
+			<option value="SUV (Innova Crysta)">SUV (Innova Crysta)</option>
+			<option value="SUV (Carens)">SUV (Carens)</option>
+		</select>
+      </div>
+      <div class="field">
+    <label>Mobile no</label>
+        <!--<input name="m_no" placeholder="Mobile no" type="text">-->
+		<select name="m_no" id="m_no">
+			<option value="8970492374">8970492374</option>
+		</select>
+      </div>
+    </div>
+  </div>
+	<div class="ui inverted segment">
+		<p>Trip & Payment Details</p>
+	</div>
+  <div class="field">
+    <div class="two fields">
+      <div class="field">
+    <label>Pick-Up From</label>
+        <input name="p_from" placeholder="Pick-Up From" type="text">
+      </div>
+      <div class="field">
+    <label>Drop To</label>
+        <input name="d_to" placeholder="Drop To" type="text">
+      </div>
+    </div>
+  </div>  
+  <div class="field">
+    <div class="two fields">
+      <div class="field">
+    <label>Pick-Up Time</label>
+        <input name="p_time" type="time">
+      </div>
+      <div class="field">
+    <label>Drop Time</label>
+        <input name="d_time" type="time">
+      </div>
+    </div>
+  </div>  
+  <!--<div class="field">
+    <div class="two fields">
+      <div class="field">
+    <label>Distance (kms)</label>
+        <input name="distance" placeholder="Kms" type="text">
+      </div>
+      <div class="field">
+    <label>Waiting Time</label>
+        <input name="w_time" type="time">
+      </div>
+    </div>
+  </div> <div class="field">
+    <div class="two fields">
+      <div class="field">
+    <label>Fare</label>
+        <input name="fare" placeholder="Fare Rs." type="text">
+      </div>
+      <div class="field">
+    <label>Extra Charges</label>
+        <input name="ex_charge" placeholder="Extra Charges Rs." type="text">
+      </div>
+    </div>
+  </div>-->  
+  <h4>Total Fare : <input type="text"></h4>
+	<img src="/storage/emulated/0/SMTT-Billing/Footer.jpg" alt="1" style="width:100%;">
+</form>
+</div>
+<center><button onclick="myFunction()">Print this page</button><center>
+
+<script>
+function myFunction() {
+    window.print();
+}
+</script>
+</body>
+</html>
